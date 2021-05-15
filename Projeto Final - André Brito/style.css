@@ -1,13 +1,26 @@
-*{
+*
 
+main,
+header {
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-@media screen and (max-width: 768px){
-
-
+/* cria um espaço acima das tags section main e footer*/
+main,
+footer {
+  margin-top: 2%;
 }
 
-@media screen and (max-width: 576px){
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
 
 
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
 }
