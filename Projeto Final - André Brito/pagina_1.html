@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Final André Brito</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-              </a>
-            </div>
-          </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">André Brito</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <footer>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/5f2046214d.js" crossorigin="anonymous"></script>
 
 
-    </footer>
+	<title>Projeto Final André Brito Criação de Sites Web</title>
+</head>
+<body>
+<!-- tags que compõem tanto a zona de destaque da página(hero) assim como a barra de navegação -->
+	<div class="hero">
+	<div class="nav-bar">		
+		<div class="nav-logo">
+			<img src="images/logo.jpg">
+		</div>
+		<div class="nav-links" id="links">
+			<i class="fa fa-close" onclick="closeMenu()"></i> <!-- função js para fechar  menu em viewport minimizado -->
+			<ul>
+				<a href="pagina_2.html"><li>SOBRE MIM</li></a>
+				<a href="#"><li>CONTACTO</li></a>
+			</ul>
+			<!--<button type="button" class="btn">CONTACTO</button>	-->		
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i> <!-- função js para expandir  menu em viewport minimizado -->
+		</div>
+		<div class="banner-title">
+			<h1>Projeto Final <span>André Brito</span><br>Criação de Sites Web</h1>
+		</div>
+		<div class="side-bar">
+			<div class="list-icon">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<i class="fa fa-github" aria-hidden="true"></i>
+				<div class="white-area">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- implementação do código para as funções js para fechar/expandir  menu em viewport minimizado -->
+	<script>
+		var show = document.getElementById("links");
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
+		 function showMenu(){
+		 	show.style.right = "0";
+		 }
+
+		 function closeMenu(){
+		 	show.style.right = "-200px";
+		 }
+	</script>
+</body>
 </html>

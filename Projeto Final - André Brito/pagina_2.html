@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/5f2046214d.js" crossorigin="anonymous"></script>
+
+
+	<title>Projeto Final André Brito Criação de Sites Web</title>
+</head>
+<body>
+<!-- tags que compõem tanto a zona de destaque da página(hero) assim como a barra de navegação -->
+	<div class="hero">
+	<div class="nav-bar">		
+		<div class="nav-logo">
+			<img src="images/logo.jpg">
+		</div>
+		<div class="nav-links" id="links">
+			<i class="fa fa-close" onclick="closeMenu()"></i> <!-- função js para fechar  menu em viewport minimizado -->
+			<ul>
+				<a href="pagina_1.html"><li>HOME</li></a>
+				<a href="#"><li>CONTACTO</li></a>
+			</ul>
+			<!--<button type="button" class="btn">CONTACTO</button>	-->		
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i> <!-- função js para expandir  menu em viewport minimizado -->
+		</div>
+		<div class="banner-title">
+			<h1>CV <span>André Brito</span></h1>
+		</div>
+				<div class="side-bar">
+			<div class="list-icon">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<i class="fa fa-github" aria-hidden="true"></i>
+				<div class="white-area">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- implementação do código para as funções js para fechar/expandir  menu em viewport minimizado -->
+	<script>
+		var show = document.getElementById("links");
+
+		 function showMenu(){
+		 	show.style.right = "0";
+		 }
+
+		 function closeMenu(){
+		 	show.style.right = "-200px";
+		 }
+	</script>
+</body>
+</html>
