@@ -2,6 +2,7 @@
 	margin:0;
 	padding: 0;
 	font-family: sans-serif;
+
 }
 
 
@@ -63,7 +64,7 @@
 }
 
 /* estilização de botão*/
-.btn{
+.btn hover::after{
 	padding: 10px 20px;
 	border: 0;
 	background: #148F77;
@@ -90,6 +91,17 @@
 	color: #148F77;
 }
 
+.banner-about h2{
+	font-size: 32px;
+	margin-bottom: 100px;
+}
+
+.banner-about{
+	margin:2em 130px;
+	color: white;
+}
+
+
 
 /* estilização e posicionamento da barra lateral e dos elementos nela contidos*/
 
@@ -114,13 +126,18 @@
 	cursor: pointer;
 }
 
+a{
+	text-decoration: none
+}
+
+
 .white-area{
 	height: 70%;
 	width:80px;
 	background: white;
 	text-align: center;
 	padding-top: 30%;
-	bottom: 0;
+	padding-bottom: 0;
 	position: absolute;
 }
 
@@ -135,19 +152,149 @@
 	display: none;
 }
 
-#cursor {
-  background: lime;
-  line-height: 17px;
-  margin-left: 3px;
-  -webkit-animation: blink 0.8s infinite;
-  width: 7px;
-  height: 15px;
+.flex-container {
+  padding-left: 6em;
+  list-style: none;
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  background: transparent;
 }
 
-@-webkit-keyframes blink {
-  0% {background: #222}
-  50% {background: lime}
-  100% {background: #222}
+h1 {
+  padding-left: .5em; 
+}
+
+.shorthand { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-item {
+  border-radius: 20px;
+  padding: 5px;
+  width: 45%;
+  height: auto;
+  margin: 10px;
+  border-bottom: solid 10px white;
+  border-right: solid 10px white;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+
+  
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  flex-grow:2;
+  /*background: linear-gradient(90deg, rgba(20,143,119,1) 0%, rgba(255,255,255,1) 100%);*/
+}
+
+.flex-item-contacts{
+  border-radius: 20px;
+  padding: 5px;
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  border-bottom: solid 10px white;
+  border-right: solid 10px white;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+
+  
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  flex-grow:2;
+  /*background: linear-gradient(90deg, rgba(20,143,119,1) 0%, rgba(255,255,255,1) 100%);*/
+}
+
+.flex-item h3{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #148F77;
+  text-align: left;
+}
+
+
+.flex-item p{
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.flex-item-contacts h3{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color:white;
+  text-align: left;
+}
+
+.flex-item-contacts p{
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.flex-item-contacts h3 span{
+	color:  #148F77;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea[type=text] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 8px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #148F77;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: white;
+  color: #148F77;
+}
+
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
 }
 
 
@@ -172,6 +319,7 @@
 		right: 20px;
 		top: 10px;
 	}
+
 
 	.nav-bar .fa{
 		display: block;

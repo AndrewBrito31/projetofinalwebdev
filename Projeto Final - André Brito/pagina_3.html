@@ -9,7 +9,7 @@
 	<script src="https://kit.fontawesome.com/5f2046214d.js" crossorigin="anonymous"></script>
 
 
-	<title>Home - AndreBRITO</title>
+	<title>ContactMe - AndreBRITO</title>
 </head>
 <body>
 <!-- tags que compõem tanto a zona de destaque da página(hero) assim como a barra de navegação -->
@@ -21,27 +21,36 @@
 		<div class="nav-links" id="links">
 			<i class="fa fa-close" onclick="closeMenu()"></i> <!-- função js para fechar  menu em viewport minimizado -->
 			<ul>
-				<a href="pagina_2.html"><li >ABOUT ME</li></a>
-				<a href="pagina_3.html"><li>CONTACT ME</li></a>
+				<a href="pagina_1.html"><li>HOME</li></a>
+				<a href="pagina_2.html"><li>ABOUT ME</li></a>
 			</ul>
 			<!--<button type="button" class="btn">CONTACTO</button>	-->	
 		</div>
-		<i class="fa fa-bars" onclick="showMenu()"></i><!--  função js para expandir  menu em viewport minimizado  -->
+
+		<i class="fa fa-bars" onclick="showMenu()"></i> <!-- função js para expandir  menu em viewport minimizado -->
 		</div>
-		<div class="banner-title">
-			<h1>WEB DEV <span> André Brito</span><br> HTML | CSS | .NET | ASP | SQL</h1>
-		</div>
-		<div class="side-bar">
+
+		<ul class="flex-container shorthand">
+		  <li class="flex-item-contacts"><br>
+		  	<h3>Let me know  <span> what can I do</span>  for you</h3><br>
+				<div class="form-container">
+  					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+    				<input type="text" class="form-control" id="email" placeholder="Type your e-mail address..">
+    				<textarea type="text" id="subject" name="subject" placeholder="Shoot your shot!.." style="height:200px"></textarea>
+    				<input type="submit" class="btn" value="Send it!">
+				</div>
+
+			</li>
+		</ul>
+			<div class="side-bar">
 			<div class="list-icon">
 				<a href="https://www.linkedin.com/in/andre-wahnon-brito"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				<a href="https://github.com/AndrewBrito31"><i class="fa fa-github" aria-hidden="true"></i></a>
 				<div class="white-area">
-				</div>
 			</div>
-
+			</div>
 		</div>
-	</div>
-	
+	</div>	
 	<!-- implementação do código para as funções js para fechar/expandir  menu em viewport minimizado -->
 	<script>
 		var show = document.getElementById("links");

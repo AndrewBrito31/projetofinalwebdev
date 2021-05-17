@@ -9,7 +9,7 @@
 	<script src="https://kit.fontawesome.com/5f2046214d.js" crossorigin="anonymous"></script>
 
 
-	<title>Projeto Final André Brito Criação de Sites Web</title>
+	<title>AboutMe - AndreBRITO</title>
 </head>
 <body>
 <!-- tags que compõem tanto a zona de destaque da página(hero) assim como a barra de navegação -->
@@ -22,25 +22,53 @@
 			<i class="fa fa-close" onclick="closeMenu()"></i> <!-- função js para fechar  menu em viewport minimizado -->
 			<ul>
 				<a href="pagina_1.html"><li>HOME</li></a>
-				<a href="#"><li>CONTACTO</li></a>
+				<a href="pagina_3.html"><li>CONTACT ME</li></a>
 			</ul>
 			<!--<button type="button" class="btn">CONTACTO</button>	-->		
 		</div>
 		<i class="fa fa-bars" onclick="showMenu()"></i> <!-- função js para expandir  menu em viewport minimizado -->
 		</div>
-		<div class="banner-title">
-			<h1>CV <span>André Brito</span></h1>
+
+		<ul class="flex-container shorthand">
+		  <li class="flex-item"><br>
+		  	<h3>Profile</h3><br>
+		  	<p>Multi Tasking, Hardworking. <br>
+		  		<br>I am usually the one who is asked to help when a problem needs solving. <br>
+		  		<br>Curious and comfortable to put hands on deck and get involved when needed for other tasks.
+		  </p></li>
+		  <li class="flex-item"><br>
+		  	<h3>Web Dev Traning</h3><br>
+		  	<p> - .NET / ASP.NET DEVELOPER - Citeforma Lisbon  
+		  		<br>
+		  		<br> - Responsive Website Development and Design - University of London - Coursera 
+		  		<br>
+		  </p></li>
+		  <li class="flex-item"><br>
+		  	<h3>Tech Skills</h3><br>
+		  	<p>HTML | CSS | JS | C# | SQL<br>
+		  	   <br> .NET | ASP.NET | Meteor <br>
+		  	   <br>Visual Studio | VS CODE | Sublime Text | SQL Server
+
+		  </p></li>
+		  <li class="flex-item"><br>
+		  	<h3>Soft Skills</h3><br>
+		  	<p>Multitasking | Problem Solving | Team Work | Communication 
+		  		<br><br>
+
+		  		<br>High Level English Speaker
+		  </li>
+		</ul>
+
 		</div>
-				<div class="side-bar">
+			<div class="side-bar">
 			<div class="list-icon">
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<i class="fa fa-github" aria-hidden="true"></i>
+				<a href="https://www.linkedin.com/in/andre-wahnon-brito"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://github.com/AndrewBrito31"><i class="fa fa-github" aria-hidden="true"></i></a>
 				<div class="white-area">
 				</div>
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 	<!-- implementação do código para as funções js para fechar/expandir  menu em viewport minimizado -->
 	<script>
 		var show = document.getElementById("links");
